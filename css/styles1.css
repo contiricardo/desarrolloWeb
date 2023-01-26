@@ -1,0 +1,360 @@
+/*** Anotaciones ***
+font-size 100%  -> 1 rem -> 16px
+font-size 62.5% -> 1 rem -> 10px
+*/
+
+/*** Tipografias ***/
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Barlow:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
+
+/*** Globales ***/
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Barlow', sans-serif;
+    font-size: 62.5%;
+    color: var(--clr-black)
+}
+body {
+    font-size: 2rem;
+}
+:root {
+    --clr-extra-dark-blue: #0E2445;
+    --clr-dark-blue: #002D72;
+    --clr-mid-blue: #0C4AA8;
+    --clr-light-blue: #4388D8;
+    --clr-extra-light-blue: #C1DDFE;
+    --clr-black: black;
+    --clr-white: white;
+}
+
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+/* Titulos */
+h1 {
+    font-family: 'Acme', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    color: var(--clr-mid-blue);
+}
+h2 {
+    font-family: 'Acme', sans-serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+h3 {
+    font-family: 'Acme', sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+}
+h4 {
+    font-family: 'Acme', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+
+/*** Contenedor general ***/
+.container {
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "main"
+    "foot";
+}
+nav {
+    grid-area: nav;
+    background-color: var(--clr-dark-blue);
+    padding: 1.5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+    nav img {
+        max-height: 35px;
+        width: auto;
+    }
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav ul li {
+        margin: 0 10px;
+    }
+    nav a {
+        font-size: 1.8rem;
+        color: var(--clr-white);
+        text-transform: uppercase;
+        padding: 2px 10px;
+    }
+    nav a:hover {
+        color: var(--clr-extra-light-blue);
+    }
+main {
+    height: auto;
+    grid-area: main;
+}
+.main {
+    margin: 10px 1%;
+    padding: 20px;
+}
+footer {
+    grid-area: foot;
+    background-color: var(--clr-dark-blue);
+    padding: 1.5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+    footer img {
+        max-height: 35px;
+        margin: 5px 10px;
+    }
+    footer .redes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+/*** Clases para diseño ***/
+/*** Home ***/
+#home {
+    background-image: url('../img/index/dcr_inicio1.jpg');
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+}
+    #home .cont {
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        /*justify-content: center; */
+    }
+    #home::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        opacity: 0.5;
+        z-index: -1;
+    }
+    #home .home {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 50px;
+        justify-content: flex-start;
+    }
+    #home p {
+        color: white;
+    }
+/*** Fin Home ***/
+
+/*** Nosotros ***/
+.nosotros {
+    padding: 20px;
+    max-width: 1200px;
+    /* Grid */
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+    .textoNosotros {
+        padding-bottom: 10px;
+    }
+    .textoNosotros p {
+        margin: 10px 0;
+    }
+    .imgNosotros {
+        background-size: cover;
+        background-position: center center;
+    }
+    .imgNosotrosfondo {
+        background-image: url(../img/nosotros.jpg);
+    }
+/*** Fin nosotros ***/
+
+/*** Servicios ***/
+.servicios {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.itemServicio {
+    border-radius: 20px;
+	min-height: 200px;
+	font-weight: bold;
+	padding: 10px;
+    border: 1px solid var(--clr-extra-dark-blue);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.itemServicio img {
+    max-width: 60px;
+}
+.itemServicio h3 {
+    margin: 15px 10px;
+    width: 100%;
+    text-align: center;
+}
+.itemServicio p {
+    margin: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+/*** Fin Servicios ***/
+
+/*** Portfolio ***/
+.portfolio {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 20px;
+    justify-items: center;
+}
+.card {
+	border-radius: 20px;
+	min-height: 200px;
+	font-weight: bold;
+	padding: 10px;
+	position: relative;
+	overflow: hidden;
+}
+    .card a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        /* position: relative; */
+    }
+    .card a img {
+        border-radius: 20px;
+        width: 100%;
+        max-width: 400px;
+        height: 100%;
+        filter: brightness(90%);
+    }
+    .card a img:hover{
+        filter: brightness(100%);
+    }
+    .card .textos {
+        height: 100%;
+    }
+/*** Fin Portfolio ***/
+
+/*** Contacto ***/
+.contacto {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    gap: 20px;
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 200;
+}
+.formulario {
+    padding: 10px;
+}
+    .formulario input {
+        display: block;
+        /* padding: 10px; */
+        width: 100%;
+        margin: 10px 5px;
+        font-family: 'Barlow', sans-serif;
+        font-size: 1.6rem;
+    }
+    .formulario textarea {
+        display: block;
+        margin: 10px 5px;
+        width: 100%;
+        resize: none;
+        font-family: 'Barlow', sans-serif;
+        font-size: 1.6rem;
+    }
+    .formulario .btnForm {
+        display: flex;
+        flex-direction: column;
+        margin: 5px 0;
+    }
+    .formulario .btnForm input{
+        margin: 5px 0;
+        border-radius: 10px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: var(--clr-extra-dark-blue);
+        background-color: var(--clr-extra-light-blue);
+    }
+    .formulario .btnForm input:hover {
+        background-color: var(--clr-mid-blue);
+        color: var(--clr-white);
+    }
+    /* mapa */
+    .mapa {
+        /* width: 50%; */
+        height: auto;
+        padding: 10px;
+    }
+        .mapa iframe {
+            width: 100%;
+            height: 100%;
+        }
+
+
+/*** Fin contacto ***/
+
+/*** Media ***/
+@media screen and (max-width: 460px) {
+    .nosotros {
+        grid-template-rows: 4fr 1fr;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .servicios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 768px) {
+    .portfolio {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contacto {
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+    }
+} 
+
+@media screen and (min-width: 950px) {
+    .nosotros {
+        grid-template-rows: 1fr;
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .servicios {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .portfolio {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
