@@ -59,10 +59,22 @@ h4 {
     font-weight: 400;
     font-size: 2rem;
 }
+/*** Colores predefinidos ***/
+.bg-bkg-clr-extra-dark-blue {background-color: #0E2445;}
+.bg-bkg-clr-dark-blue {background-color: #002D72;}
+.bg-bkg-clr-mid-blue {background-color: #0C4AA8;}
+.bg-bkg-clr-light-blue {background-color: #4388D8;}
+.bg-bkg-clr-extra-light-blue {background-color: #C1DDFE;}
+/*** Fonts colors ***/
+.bg-font-clr-extra-dark-blue {color: #0E2445;}
+.bg-font-clr-dark-blue {color: #002D72;}
+.bg-font-clr-mid-blue {color: #0C4AA8;}
+.bg-font-clr-light-blue {color: #4388D8;}
+.bg-font-clr-extra-light-blue {color: #C1DDFE;}
 
 
 /*** Contenedor general ***/
-.container {
+.contenedor {
     display: grid;
     grid-template-areas: 
     "nav"
