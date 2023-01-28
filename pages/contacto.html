@@ -47,20 +47,38 @@
     <main>
         <div class="main">
             <h1>Contacto</h1>
-            <div class="contacto">
-                <div class="formulario">
+            <div class="row">
+                <div class="col-lg-6 formulario">
+                    <!-- Formulario bootstrap -->
                     <form>
-                        <input type="text" id="nombre" placeholder="Nombre">
-                        <input type="email" id="mail" placeholder="Correo electrónico">
-                        <input type="tel" name="tel" placeholder="Teléfono o celular">
-                        <textarea name="mensaje" id="mensaje" cols="30" rows="8" placeholder="Mensaje"></textarea>
-                        <div class="btnForm">
-                            <input type="submit" value="Enviar formulario">
-                            <input type="reset" value="Limpiar formulario">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="Ricardo">
+                            <label for="floatingInput">Nombre</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="Ricardo">
+                            <label for="floatingInput">Correo electrónico</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="Ricardo">
+                            <label for="floatingInput">Teléfono</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                            <label for="floatingTextarea">Comentario</label>
+                          </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">Deseo recibir información.</label>
+                        </div>
+                        <div>
+                            <button type="submit" class="btn btnForm">Enviar</button>
+                            <button type="reset" class="btn btnForm">Limpiar</button>
                         </div>
                     </form>
+                    <!-- Fin Formulario bootstrap -->
                 </div>
-                <div class="mapa">
+                <div class="col-lg-6 mapa">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.5031602003085!2d-58.571420691556945!3d-34.6543836922515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7c3cbeed4d3%3A0x25e673cef9361656!2sUrquiza%201386%2C%20B1704%20Ramos%20Mej%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1673193520558!5m2!1ses-419!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>

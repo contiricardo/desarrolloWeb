@@ -18,7 +18,7 @@ html {
     color: var(--clr-black)
 }
 body {
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 :root {
     --clr-extra-dark-blue: #0E2445;
@@ -81,6 +81,8 @@ h4 {
     "main"
     "foot";
 }
+/*** Nav comentado para evitar pisar Bootstrap
+     Se va a quitar cuando solo se use Bs ***
 nav {
     grid-area: nav;
     background-color: var(--clr-dark-blue);
@@ -90,12 +92,12 @@ nav {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-}
+}*/
     nav img {
         max-height: 35px;
         width: auto;
     }
-    nav ul {
+   /* nav ul {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -111,7 +113,7 @@ nav {
     }
     nav a:hover {
         color: var(--clr-extra-light-blue);
-    }
+    } */
 main {
     height: auto;
     grid-area: main;
@@ -275,20 +277,21 @@ footer {
 /*** Contacto ***/
 .contacto {
     margin: 20px 0;
-    display: grid;
+    /*display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr;
     gap: 20px;
     width: 100%;
-    font-size: 1.6rem;
-    font-weight: 200;
+    font-size: 0.2rem;
+    font-weight: 200;*/
 }
+/*
 .formulario {
     padding: 10px;
-}
+} */
+    /*** comentado hasta que solo quede Bs
     .formulario input {
         display: block;
-        /* padding: 10px; */
         width: 100%;
         margin: 10px 5px;
         font-family: 'Barlow', sans-serif;
@@ -316,6 +319,18 @@ footer {
         background-color: var(--clr-extra-light-blue);
     }
     .formulario .btnForm input:hover {
+        background-color: var(--clr-mid-blue);
+        color: var(--clr-white);
+    } */
+    .btnForm {
+        margin: 5px 0;
+        border-radius: 10px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: var(--clr-extra-dark-blue);
+        background-color: var(--clr-extra-light-blue);
+    }
+    .btnForm:hover {
         background-color: var(--clr-mid-blue);
         color: var(--clr-white);
     }
@@ -350,10 +365,10 @@ footer {
     .portfolio {
         grid-template-columns: repeat(2, 1fr);
     }
-    .contacto {
+    /*.contacto {
         grid-template-rows: 1fr;
         grid-template-columns: repeat(2, 1fr);
-    }
+    }*/
 } 
 
 @media screen and (min-width: 1024px) {
