@@ -130,9 +130,17 @@ footer {
         align-items: center;
     }
     #home .homeMarca {
-        animation-duration: 4s;
-        animation-name: apareceAmplia;
-        animation-iteration-count: initial;
+        position: relative;
+        text-transform: uppercase;
+        text-shadow: -15px 5px 20px #ced0d3;
+        color: var(--clr-extra-light-blue);
+        letter-spacing: -0.05em;
+        font-family: 'Anton', Arial, sans-serif;
+        user-select: none;
+        text-transform: uppercase;
+        font-size: 6rem;
+        transition: all 0.25s ease-out;
+        animation: efectoMarca 3s linear 1s infinite;
     }
     #home::after {
         content: '';
@@ -174,10 +182,12 @@ footer {
     .imgNosotros {
         background-size: cover;
         background-position: center center;
+        
     }
     .imgNosotrosfondo {
         background-image: url(../img/nosotros.jpg);
     }
+
 /*** Fin nosotros ***/
 
 /*** Servicios ***/
@@ -331,9 +341,17 @@ footer {
     }
  }
 
- @keyframes rotacionHor {
+@keyframes rotacionHor {
     from {}
     to {
         transform: rotateY(360deg);
     }
- }
+}
+
+@keyframes efectoMarca {
+    0% {}
+    50% {
+        text-shadow: -16px 6px 15px #ced0d3;
+    }
+    100%{}
+}
