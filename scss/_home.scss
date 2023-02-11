@@ -1,0 +1,48 @@
+/*** Home ***/
+#home {
+    background-image: url('../img/index/dcr_inicio1.jpg');
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+    .cont {
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .homeMarca {
+        position: relative;
+        text-transform: uppercase;
+        text-shadow: -15px 5px 20px #ced0d3;
+        color: $clr-x-light-blue;
+        letter-spacing: -0.05em;
+        font-family: 'Anton', Arial, sans-serif;
+        user-select: none;
+        text-transform: uppercase;
+        font-size: 6rem;
+        transition: all 0.25s ease-out;
+        animation: efectoMarca 3s linear 1s infinite;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: $clr-black;
+        opacity: 0.5;
+        z-index: -1;
+    }
+    .home {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 50px;
+        justify-content: flex-start;
+    }
+    p {
+        color: $clr-white;
+    }
+}
+/*** Fin Home ***/

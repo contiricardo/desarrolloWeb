@@ -1,0 +1,277 @@
+@charset "UTF-8";
+/*** importaciones de partials scss ***/
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Barlow:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap");
+/*** variables globales ***/
+/*** variables colores ***/
+/*** Fuentes ***/
+/*** Font-family - Familias tipograficas ***/
+/*** fontweight - Ancho de fuente ***/
+/*** font-size - Tamaño de textos ***/
+/*** Información general del proyecto ***/
+/*** Globales ***/
+html {
+  font-family: "Barlow", sans-serif;
+  font-size: 62.5%;
+  color: rgb(0, 0, 0);
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/*** Titulos ***/
+h1, h2, h3 {
+  color: rgb(0, 45, 114);
+}
+
+h1 {
+  font-family: "Acme", sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-family: "Acme", sans-serif;
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-family: "Acme", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+h4 {
+  font-family: "Acme", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+/*** Colores predefinidos ***/
+.bg-bkg-clr-x-dark-blue {
+  background-color: rgb(14, 36, 69);
+}
+
+.bg-bkg-clr-dark-blue {
+  background-color: rgb(0, 45, 114);
+}
+
+.bg-bkg-clr-mid-blue {
+  background-color: rgb(12, 74, 168);
+}
+
+.bg-bkg-clr-light-blue {
+  background-color: rgb(67, 136, 216);
+}
+
+.bg-bkg-clr-x-light-blue {
+  background-color: rgb(193, 221, 254);
+}
+
+/*** Fonts colors ***/
+.bg-font-clr-x-dark-blue {
+  color: rgb(14, 36, 69);
+}
+
+.bg-font-clr-dark-blue {
+  color: rgb(0, 45, 114);
+}
+
+.bg-font-clr-mid-blue {
+  color: rgb(12, 74, 168);
+}
+
+.bg-font-clr-light-blue {
+  color: rgb(67, 136, 216);
+}
+
+.bg-font-clr-x-light-blue {
+  color: rgb(193, 221, 254);
+}
+
+/*** Nav ***/
+nav img {
+  max-height: 25px;
+  width: auto;
+}
+
+/*** Main ***/
+main {
+  height: auto;
+}
+main .main {
+  margin: 10px 1%;
+  padding: 20px;
+}
+
+/*** Footer ***/
+footer {
+  background-color: rgb(14, 36, 69);
+  padding: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+footer ul {
+  padding-left: 0;
+}
+footer ul li a {
+  color: rgb(193, 221, 254);
+}
+footer ul li a:hover {
+  color: rgb(67, 136, 216);
+}
+footer .redes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+footer .redes img {
+  max-height: 30px;
+  margin: 5px 10px;
+}
+
+@keyframes rotacionHor {
+  to {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes efectoMarca {
+  50% {
+    text-shadow: -16px 6px 15px #ced0d3;
+  }
+}
+/*** Home ***/
+#home {
+  background-image: url("../img/index/dcr_inicio1.jpg");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  z-index: 1;
+}
+#home .cont {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+#home .homeMarca {
+  position: relative;
+  text-transform: uppercase;
+  text-shadow: -15px 5px 20px #ced0d3;
+  color: rgb(193, 221, 254);
+  letter-spacing: -0.05em;
+  font-family: "Anton", Arial, sans-serif;
+  user-select: none;
+  text-transform: uppercase;
+  font-size: 6rem;
+  transition: all 0.25s ease-out;
+  animation: efectoMarca 3s linear 1s infinite;
+}
+#home::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.5;
+  z-index: -1;
+}
+#home .home {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+  justify-content: flex-start;
+}
+#home p {
+  color: rgb(255, 255, 255);
+}
+
+/*** Fin Home ***/
+.servicios {
+  padding: 20px;
+}
+.servicios .itemServicio {
+  border-radius: 20px;
+  min-height: 200px;
+  padding: 10px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.servicios .itemServicio img {
+  max-width: 60px;
+  animation: rotacionHor 8s linear 1s infinite;
+}
+.servicios .itemServicio h3 {
+  margin: 15px 10px;
+  width: 100%;
+  text-align: center;
+}
+.servicios .itemServicio p {
+  margin: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.portfolio {
+  margin: 20px auto;
+}
+.portfolio a img {
+  width: 100%;
+  transition: ease-in-out 1s;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.portfolio a img:hover {
+  transition: ease-in-out 0.5s;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+.contacto {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* mapa */
+}
+.contacto textarea {
+  min-height: 130px;
+}
+.contacto .btnForm {
+  margin: 5px 0;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(14, 36, 69);
+  background-color: rgb(193, 221, 254);
+}
+.contacto .btnForm:hover {
+  background-color: rgb(12, 74, 168);
+  color: rgb(255, 255, 255);
+}
+.contacto .mapa {
+  /* width: 50%; */
+  height: auto;
+  padding: 10px;
+}
+.contacto .mapa iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+}
+
+/*# sourceMappingURL=style.css.map */

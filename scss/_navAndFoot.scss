@@ -1,0 +1,47 @@
+/*** Nav ***/
+nav {
+    img {
+        max-height: 25px;
+        width: auto;
+    }
+}
+
+/*** Main ***/
+main {
+    height: auto;
+    .main {
+        margin: 10px 1%;
+        padding: 20px;
+    }
+}
+
+/*** Footer ***/
+footer {
+    background-color: $clr-x-dark-blue;
+    padding: 1.5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    ul {
+        padding-left: 0;
+        li {
+            a {
+                color: $clr-x-light-blue;
+                &:hover {
+                    color: $clr-light-blue;
+                }
+            }
+        }
+    }
+    
+    .redes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        img {
+            max-height: 30px;
+            margin: 5px 10px;
+        }
+    }
+}

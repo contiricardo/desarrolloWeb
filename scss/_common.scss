@@ -1,0 +1,49 @@
+/*** Información general del proyecto ***/
+
+/*** Globales ***/
+html {
+    font-family: $mainFont;
+    font-size: 62.5%;
+    color: $clr-black;
+}
+body {font-size: $textMd;}
+a {text-decoration: none;}
+li {list-style: none;}
+
+/*** Titulos ***/
+h1, h2, h3 {
+    color: $clr-dark-blue;
+}
+h1 {
+    font-family: $titleFont;
+    font-weight: $textBold;
+    font-size: $textXxl;
+}
+h2 {
+    font-family: $titleFont;
+    font-weight: $textBold;
+    font-size: $textXl;
+}
+h3 {
+    font-family: $titleFont;
+    font-weight: $textRegular;
+    font-size: $textLg;
+}
+h4 {
+    font-family: $titleFont;
+    font-weight: $textRegular;
+    font-size: $textMd;
+}
+
+/*** Colores predefinidos ***/
+.bg-bkg-clr-x-dark-blue {background-color: $clr-x-dark-blue;}
+.bg-bkg-clr-dark-blue {background-color: $clr-dark-blue;}
+.bg-bkg-clr-mid-blue {background-color: $clr-mid-blue;}
+.bg-bkg-clr-light-blue {background-color: $clr-light-blue;}
+.bg-bkg-clr-x-light-blue {background-color: $clr-x-light-blue;}
+/*** Fonts colors ***/
+.bg-font-clr-x-dark-blue {color: $clr-x-dark-blue;}
+.bg-font-clr-dark-blue {color: $clr-dark-blue;}
+.bg-font-clr-mid-blue {color: $clr-mid-blue;}
+.bg-font-clr-light-blue {color: $clr-light-blue;}
+.bg-font-clr-x-light-blue {color: $clr-x-light-blue;}

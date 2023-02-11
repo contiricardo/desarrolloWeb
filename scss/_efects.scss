@@ -1,0 +1,14 @@
+@keyframes rotacionHor {
+    from {}
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes efectoMarca {
+    0% {}
+    50% {
+        text-shadow: -16px 6px 15px #ced0d3;
+    }
+    100%{}
+}
