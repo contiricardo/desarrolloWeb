@@ -15,24 +15,16 @@ h1, h2, h3 {
     color: $clr-dark-blue;
 }
 h1 {
-    font-family: $titleFont;
-    font-weight: $textBold;
-    font-size: $textXxl;
+    @include styleText($titleFont,$textBold,$textXxl);
 }
 h2 {
-    font-family: $titleFont;
-    font-weight: $textBold;
-    font-size: $textXl;
+    @include styleText($titleFont,$textBold,$textXl);
 }
 h3 {
-    font-family: $titleFont;
-    font-weight: $textRegular;
-    font-size: $textLg;
+    @include styleText($titleFont,$textRegular,$textLg);
 }
 h4 {
-    font-family: $titleFont;
-    font-weight: $textRegular;
-    font-size: $textMd;
+    @include styleText($titleFont,$textRegular,$textMd);
 }
 
 /*** Colores predefinidos ***/

@@ -1,0 +1,12 @@
+/* Realmente no tenía nada para repetir porque el sitio es chico */
+.flexWrapJustCenter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@mixin styleText($family,$weight,$size){
+    font-family: $family;
+    font-weight: $weight;
+    font-size: $size;
+}
