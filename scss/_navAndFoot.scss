@@ -20,7 +20,8 @@ footer {
     background-color: $clr-x-dark-blue;
     padding: 1.5rem;
 
-    @extend flexWrapCenter;
+    @extend .flexWrapJustCenter;
+
     ul {
         padding-left: 0;
         li {

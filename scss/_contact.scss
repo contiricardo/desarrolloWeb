@@ -12,6 +12,8 @@
         border-width: 1px;
         border-color: $clr-x-dark-blue;
         background-color: $clr-x-light-blue;
+        width: 100%;
+        @include styleText($brandFont,$textRegular,$textMd);
     
         &:hover {
             background-color: $clr-mid-blue;

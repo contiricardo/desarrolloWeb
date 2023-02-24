@@ -39,3 +39,15 @@ h4 {
 .bg-font-clr-mid-blue {color: $clr-mid-blue;}
 .bg-font-clr-light-blue {color: $clr-light-blue;}
 .bg-font-clr-x-light-blue {color: $clr-x-light-blue;}
+
+.btn-general {
+    width: 100%;
+    --bs-btn-color: #ffffff;
+    --bs-btn-bg: #002d72;
+    --bs-btn-border-color: #002d72;
+    --bs-btn-hover-color: #ffffff;
+    --bs-btn-hover-bg: #0c4aa8;
+    --bs-btn-hover-border-color: #0c4aa8;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    @include styleText($mainFont,$textRegular,$textMd);
+}
