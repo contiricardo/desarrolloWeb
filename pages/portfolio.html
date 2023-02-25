@@ -9,8 +9,13 @@
     <link rel="icon" href="../img/favicon.png" type="image/x-icon"/>
     <!-- link a bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+   
+    <!-- link de CDN de animates  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <!-- link a la hoja de estilo -->
     <link rel="stylesheet" href="../css/style.css">
+
     <!-- SEO -->
     <meta name="description" content="Observa parte de algunos de los grandes desarrollos que realizamos en el último tiempo.">
     <meta name="author" content="Conti Ricardo">
@@ -56,22 +61,22 @@
         <div class="container portfolio">
             <h1>Portfolio</h1>
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="animate__animated animate__backInLeft col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <a href="https://www.22diez.com.ar/">
                         <img class="" src="../img/portfolio/22_diez.jpg" alt="Mayorista 22Diez">
                     </a>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="animate__animated animate__backInLeft animate__delay-1s col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <a href="http://www.segurosgc.com.ar/">
                         <img src="../img/portfolio/segurosgc.png" alt="Seguros GC">
                     </a>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="animate__animated animate__backInLeft animate__delay-2s col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <a href="https://quimicadaico.com.ar/">
                         <img src="../img/portfolio/quimicadaico.png" alt="Quimica Daico">
                     </a>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="animate__animated animate__backInLeft animate__delay-3s col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <a href="https://supersuelosa.com.ar/">
                         <img src="../img/portfolio/supersuelo.png" alt="Supersuelo">
                     </a>
@@ -80,7 +85,7 @@
         </div>
     </main>
 
-    <footer class="fixed-bottom">
+    <footer class="bottom">
         <div class="col-lg-4 col-md-4 col-sm-6 col-6 text-center bg-font-clr-x-light-blue">
             <ul>
                 <li>
@@ -122,7 +127,10 @@
             </div>
             <div class="text-center redes">
                 <a href="../index.html">
-                    <img src="../img/logos/logo_CR.png" alt="logo Disegno CR"/>
+                    <picture>
+                        <source media="(min-width:650px)" srcset="../img/logos/logo_CR.png" >
+                        <img src="../img/logos/icono_CR.png" alt="logo Disegno CR" >
+                    </picture>
                 </a>
             </div>
         </div>
@@ -130,5 +138,6 @@
     
     <!-- Link js de bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
 </body>
 </html>

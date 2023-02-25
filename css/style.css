@@ -136,7 +136,7 @@ main .main {
 
 /*** Footer ***/
 footer {
-  background-color: #0e2445;
+  background-color: #002d72;
   padding: 1.5rem;
 }
 footer ul {
@@ -168,9 +168,14 @@ footer .redes img {
     text-shadow: -16px 6px 15px #ced0d3;
   }
 }
+@keyframes agrandar {
+  to {
+    transform: scale(2, 2);
+  }
+}
 /*** Home ***/
 #home {
-  background-image: url("../img/index/dcr_inicio1.jpg");
+  background-image: url("../img/index/dcr_inicio1.webp");
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -246,6 +251,15 @@ footer .redes img {
   font-weight: 400;
 }
 
+.imgSEO {
+  margin: 10px;
+  transition: all 0.5s;
+}
+.imgSEO:hover {
+  transform: scale(1.15, 1.15);
+  overflow: hidden;
+}
+
 .portfolio {
   margin: 20px auto;
 }
@@ -264,7 +278,6 @@ footer .redes img {
 .contacto {
   margin-top: 20px;
   margin-bottom: 20px;
-  /* mapa */
 }
 .contacto textarea {
   min-height: 130px;
@@ -286,7 +299,6 @@ footer .redes img {
   color: #ffffff;
 }
 .contacto .mapa {
-  /* width: 50%; */
   height: auto;
   padding: 10px;
 }

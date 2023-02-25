@@ -12,3 +12,10 @@
     }
     100%{}
 }
+
+@keyframes agrandar {
+    from {}
+    to {
+        transform: scale(2, 2);
+    }
+}
